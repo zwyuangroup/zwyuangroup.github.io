@@ -6,7 +6,7 @@ title: Arleigh Christa Hack
 subtitle: 本科生
 email:
 img: /assets/img/former_team/Arleigh.jpg
-flag_img: flag/China.svg
+flag_img: flag/Canada.svg
 classification: former_team
 
 ---
