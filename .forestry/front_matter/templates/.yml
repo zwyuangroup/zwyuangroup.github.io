@@ -25,17 +25,6 @@ fields:
   type: file
   hidden: false
   default: ''
-- name: flag_img
-  label: Flag img
-  type: text
-  hidden: true
-  default: flag/China.svg
-  config:
-    required: true
-- type: text
-  name: classification
-  label: classification
-  default: former_team
 - type: select
   config:
     source:
@@ -71,3 +60,17 @@ fields:
     - 访问学者
   label: subtitle
   default: 博士生
+- name: flag_img
+  label: Flag img
+  type: text
+  hidden: true
+  default: flag/China.svg
+  config:
+    required: true
+- type: text
+  name: classification
+  label: classification
+  default: former_team
+  hidden: true
+  config:
+    required: true
