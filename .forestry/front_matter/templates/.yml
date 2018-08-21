@@ -25,11 +25,6 @@ fields:
   type: file
   hidden: false
   default: ''
-- name: identify
-  label: Identify
-  type: text
-  hidden: false
-  default: ''
 - name: flag_img
   label: Flag img
   type: text
@@ -75,3 +70,4 @@ fields:
     - 交换生
     - 访问学者
   label: subtitle
+  default: 博士生
