@@ -7,7 +7,7 @@ fields:
   label: Title
   type: textarea
   hidden: false
-  default: 发表论文
+  default: ''
 - name: layout
   label: Layout
   type: text
