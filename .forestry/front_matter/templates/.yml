@@ -1,7 +1,7 @@
 ---
-label: 现在成员
-hide_body: false
-is_partial: false
+label: 贾倩
+hide_body: 
+is_partial: 
 fields:
 - name: title
   label: Title
@@ -12,7 +12,7 @@ fields:
   label: Layout
   type: text
   hidden: false
-  default: post
+  default: ''
 - name: date
   label: Date
   type: datetime
@@ -21,6 +21,11 @@ fields:
 - name: img
   label: Img
   type: file
+  hidden: false
+  default: ''
+- name: classification
+  label: Classification
+  type: list
   hidden: false
   default: ''
 - name: identify
@@ -36,14 +41,5 @@ fields:
 - name: flag_img
   label: Flag img
   type: text
-  hidden: true
-  default: flag/China.svg
-  config:
-    required: true
-- type: text
-  name: classification
-  label: classification
-  hidden: true
-  config:
-    required: true
-  default: team
+  hidden: false
+  default: ''
