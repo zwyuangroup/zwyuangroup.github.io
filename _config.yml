@@ -1,0 +1,130 @@
+---
+# 网站设置
+# ╱╱╱╱╱╱╱╱╭╮╱╱╱╱╱╱╭╮
+# ╱╱╱╱╱╱╱╱┃┃╱╱╱╱╱╭╯╰╮
+# ╭╮╭╮╭┳━━┫╰━┳━━┳╋╮╭╋━━╮
+# ┃╰╯╰╯┃┃━┫╭╮┃━━╋┫┃┃┃┃━┫
+# ╰╮╭╮╭┫┃━┫╰╯┣━━┃┃┃╰┫┃━┫
+# ╱╰╯╰╯╰━━┻━━┻━━┻╯╰━┻━━╯
+
+site_name: 袁增伟教授课题组
+title: 袁增伟教授课题组
+description: 课题组主要从事环境规划与管理研究，致力于人类活动的资源和环境效应评估，为系统调控人类活动和推动区域可持续发展提供决策依据。
+locale: en_CN
+url: https://www.njumce.com
+enforce_ssl: www.njumce.com
+
+baseurl: ""
+permalink: "/:year/:title.html"
+
+# 网站主页设置
+# ╱╱╱╱╱╱╭╮
+# ╱╱╱╱╱╱┃┃
+# ╭┳━╮╭━╯┣━━┳╮╭╮
+# ┣┫╭╮┫╭╮┃┃━╋╋╋╯
+# ┃┃┃┃┃╰╯┃┃━╋╋╋╮
+# ╰┻╯╰┻━━┻━━┻╯╰╯
+
+index:
+  research_img: slide-bg-research.jpg
+  recent_publications_img: recent-publications.jpg
+  photorederx_img: xnfzsys-desktop.jpg
+  bio_img: bio_bg.jpg
+  news_img: news_bg.jpg
+
+# 研究内容页面
+# ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭╮
+# ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃┃
+# ╭━┳━━┳━━┳━━┳━━┳━┳━━┫╰━╮
+# ┃╭┫┃━┫━━┫┃━┫╭╮┃╭┫╭━┫╭╮┃
+# ┃┃┃┃━╋━━┃┃━┫╭╮┃┃┃╰━┫┃┃┃
+# ╰╯╰━━┻━━┻━━┻╯╰┻╯╰━━┻╯╰╯
+research:
+  img:
+  lca:
+    slide1: lca_slide1.png
+    slide2: lca_slide2.png
+  mfa:
+    pic1: 
+      name: MFA图表标识
+      url: mfa_pic1.jpg
+    pic2: 
+      name: 物质代谢分析框架
+      url: mfa_pic2.jpg
+    pic3: 
+      name: MFA基本程序
+      url: mfa_pic3.jpg
+    pic4: 
+      name: Lawrence A.etc. Ecosystems (2001) 
+      url: mfa_pic4.jpg
+  doc:
+    - name: 生命周期评价——刘欣
+      url : LCA.pptx
+      description: 生命周期评价介绍以及相关数据库和软件
+    - name: 物质流分析——刘欣
+      url: MFA.pptx
+      description: 物质流介绍和方法论入门
+    - name: Practical Handbook of Material Flow Analysis
+      url: practical_handbook-of-material-flow-analysis.pdf
+      description: 物质流分析权威书籍
+
+
+# 最近成果页面
+# ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭╮╱╱╱╱╱╱╱╭╮╱╭╮╱╱╱╱╱╱╱╱╭╮
+# ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭╯╰╮╱╱╱╱╱╱┃┃╱┃┃╱╱╱╱╱╱╱╭╯╰╮
+# ╭━┳━━┳━━┳━━┳━╮╰╮╭╯╭━━┳╮╭┫╰━┫┃╭┳━━┳━━╋╮╭╋┳━━┳━╮╭━━╮
+# ┃╭┫┃━┫╭━┫┃━┫╭╮╮┃┃╱┃╭╮┃┃┃┃╭╮┃┃┣┫╭━┫╭╮┃┃┃┣┫╭╮┃╭╮┫━━┫
+# ┃┃┃┃━┫╰━┫┃━┫┃┃┃┃╰╮┃╰╯┃╰╯┃╰╯┃╰┫┃╰━┫╭╮┃┃╰┫┃╰╯┃┃┃┣━━┃
+# ╰╯╰━━┻━━┻━━┻╯╰╯╰━╯┃╭━┻━━┻━━┻━┻┻━━┻╯╰╯╰━┻┻━━┻╯╰┻━━╯
+# ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃┃
+# ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰╯
+
+
+
+# 联系方式
+# ╱╱╱╱╱╱╱╱╱╱╭╮╱╱╱╱╱╱╱╭╮
+# ╱╱╱╱╱╱╱╱╱╭╯╰╮╱╱╱╱╱╭╯╰╮
+# ╭━━┳━━┳━╮╰╮╭╋━━┳━━╋╮╭╯
+# ┃╭━┫╭╮┃╭╮╮┃┃┃╭╮┃╭━╯┃┃
+# ┃╰━┫╰╯┃┃┃┃┃╰┫╭╮┃╰━╮┃╰╮
+# ╰━━┻━━┻╯╰╯╰━┻╯╰┻━━╯╰━╯
+
+contact:
+  email: zwyuangroup@gmail.com
+  weixin: https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIyOTE5NTcwMA==&scene=124&#wechat_redirect
+  weibo:
+  google:
+    plus:
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  baidu-verify:
+
+# 默认设置
+# ╱╱╭╮╱╱╱╭━╮╱╱╱╱╱╭╮╱╭╮
+# ╱╱┃┃╱╱╱┃╭╯╱╱╱╱╱┃┃╭╯╰╮
+# ╭━╯┣━━┳╯╰┳━━┳╮╭┫┃╰╮╭╯
+# ┃╭╮┃┃━╋╮╭┫╭╮┃┃┃┃┃╱┃┃
+# ┃╰╯┃┃━┫┃┃┃╭╮┃╰╯┃╰╮┃╰╮
+# ╰━━┻━━╯╰╯╰╯╰┻━━┻━╯╰━╯
+
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+mathjax: true
+include:
+- ".htaccess"
+plugins:
+
+theme: 

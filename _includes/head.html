@@ -1,0 +1,200 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MCE{% if page.title %}&#8211;{{ page.title }}  {% endif %}{{ site.title }}</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v5.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="{{ page.description | strip_html }}"/>
+<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}" />
+<meta property="og:description" content="{{ page.description | strip_html }}" />
+<meta property="og:url" content="{{ site.url }}" />
+<meta property="og:site_name" content="{{ site.site_name }}" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="{{ page.description | strip_html }}" />
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"{{ site.url }}\/","name":"{{ site.site_name }}","potentialAction":{"@type":"SearchAction","target":"{{ site.url }}\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='http://s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="{{site.site_name}} &raquo; Feed" href="{{ site.url }}/assets/feed/index.rss" />
+<link rel="alternate" type="application/rss+xml" title="{{site.site_name}} &raquo; Comments Feed" href="{{ site.url }}/assets/comments/feed/index.rss" />
+<link rel='stylesheet' id='contact-form-7-css'  href='{{ site.url }}/assets/wp-content/plugins/contact-form-7/includes/css/styles-ver=4.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='authorizer-public-css-css'  href='{{ site.url }}/assets/wp-content/plugins/authorizer/css/authorizer-public-ver=2.3.2.css' type='text/css' media='all' />
+
+<link rel='stylesheet' id='sccss_style-css'  href='{{ site.url }}/assets/css/macmillan-sccss.css' type='text/css' media='all' />
+
+<link rel='stylesheet' id='main-css'  href='{{ site.url }}/assets/wp-content/themes/macmillan/assets/build/css/main.css' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='{{ site.url }}/assets/js/index.json' />
+<link rel='shortlink' href='index.html' />
+
+<link rel="icon" href="{{ site.url }}/assets/wp-content/uploads/sites/6/cropped-arrowcircle_icon-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="{{ site.url }}/assets/wp-content/uploads/sites/6/cropped-arrowcircle_icon-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/assets/wp-content/uploads/sites/6/cropped-arrowcircle_icon-1-180x180.png" />
+<meta name="msapplication-TileImage" content="{{ site.url }}/assets/wp-content/uploads/sites/6/cropped-arrowcircle_icon-1-270x270.png" />
+
+
+ <script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//zwyuangroup.github.io/?wordfence_logHuman=1&hid=A7F385FAA171CD08A71268A4965E23F6');
+</script>
+<style type="text/css" id="wp-custom-css">/* IE 10+ fixes */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .research-intro__circles .research-intro__circle:nth-child(2) svg circle,
+  .research-intro__circles .research-intro__circle:nth-child(5) svg circle {
+      stroke-dasharray: 810 243 !important;
+      stroke-dashoffset: 0 !important;
+      transform: rotate(0) !important;
+  }
+
+  .research-intro__circles .research-intro__circle:nth-child(3) svg circle,
+  .research-intro__circles .research-intro__circle:nth-child(4) svg circle {
+      stroke-dasharray: 770 330 !important;
+      stroke-dashoffset: 0 !important;
+      transform: rotate(0) !important;
+  }
+
+  .research-synthesis__image-desktop,
+  .research-synthesis__image-mobile {
+  	height: 100%
+  }
+
+  .research-photoredox-gallery__hover-wrap {
+  	z-index: 3;
+  }
+
+  .research-photoredox-gallery__item-image-wrap:hover::after {
+  	z-index: 2;
+  }
+
+  .research-photoredox-gallery__item-title,
+  .photos-blocks__item-title {
+  	display: block;
+    width: 100%;
+  }
+
+  .research-organocatalysis__thumb img {
+  	height: 100%;
+  }
+
+  html .research-organocatalysis__desc .research-organocatalysis__icon svg circle {
+  	stroke-dasharray: 376 133 !important;
+    stroke-dashoffset: 184 !important;
+    transform: rotate(0) !important;
+  }
+
+  .scientific-achievements__right-sidebar h2 {
+  	width: 100%;
+  }
+
+  .heading-background__wrap{
+  	line-height: 7.875rem;
+  }
+
+  .box-with-logo__content-box {
+  	flex-shrink: 1;
+  }
+
+  .photos-blocks__item-list {
+  	width: 100%;
+  }
+
+  /*.photos-blocks__item-list {
+  	display: flex !important;
+    flex-wrap: wrap;
+  }*/
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 40em) {
+  .heading-background__wrap{
+  	line-height: 11.25rem;
+  }
+}
+
+/* EDGE fixes */
+@supports (-ms-ime-align:auto) {
+  .research-intro__circles .research-intro__circle:nth-child(2) svg circle,
+  .research-intro__circles .research-intro__circle:nth-child(5) svg circle {
+      stroke-dasharray: 810 243 !important;
+      stroke-dashoffset: 0 !important;
+      transform: rotate(0) !important;
+  }
+
+  .research-intro__circles .research-intro__circle:nth-child(3) svg circle,
+  .research-intro__circles .research-intro__circle:nth-child(4) svg circle {
+      stroke-dasharray: 770 330 !important;
+      stroke-dashoffset: 0 !important;
+      transform: rotate(0) !important;
+  }
+
+  .research-synthesis__image-desktop,
+  .research-synthesis__image-mobile {
+  	height: 100%
+  }
+
+  .research-photoredox-gallery__hover-wrap {
+  	z-index: 3;
+  }
+
+  .research-photoredox-gallery__item-image-wrap:hover::after {
+  	z-index: 2;
+  }
+
+  .research-photoredox-gallery__item-title {
+  	display: block;
+    width: 100%;
+  }
+
+  .research-organocatalysis__thumb img {
+  	height: 100%;
+  }
+
+  html .research-organocatalysis__desc .research-organocatalysis__icon svg circle {
+  	stroke-dasharray: 376 133 !important;
+    stroke-dashoffset: 184 !important;
+    transform: rotate(0) !important;
+  }
+}		</style>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+      <style>html::-webkit-scrollbar {
+        display: none;
+      }
+    </style>

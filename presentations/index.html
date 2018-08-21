@@ -1,0 +1,128 @@
+---
+title: 学术报告
+layout: page
+description:
+---
+
+<main class="main main--interior">
+
+  <section class="hero-parallax js-parallax" style="background-image: url('{{ site.url }}/assets/img/PresHero.jpg');">
+
+    <div class="hero-parallax__content">
+      <h1 class="hero-parallax__title hero-parallax__title--white">
+        学术报告      </h1>
+      <div class="divider divider--white"><span></span></div>
+    </div>
+
+  </section>
+  <section class="presentations" id="presentations">
+
+    <div class="search-bar search-bar--presentations clearfix">
+      <div class="js-fixed-navbar search-bar__bg--blue clearfix">
+
+        <form method="get" class="form-search form-search--presentations" action="../index.html">
+          <label for="s" class="show-for-sr">Search</label>
+          <input type="hidden" value="presentations" name="post_type" />
+          <input type="text" class="form-search__input js-form-input-not-empty" name="s" placeholder="Search" />
+          <button type="submit" class="form-search__submit js-toggle-disabled" disabled="disabled">
+        <svg class="form-search__loop" width="20px" height="20px">
+          <use xlink:href="#icon-loop"></use>
+        </svg>
+      </button>
+        </form>
+
+
+        <div class="year-filter">
+          <a class="year-filter__toggle js-year-filter-toggle" href="index.html#">Year</a>
+          <div class="year-filter__select">
+            <div class="year-filter__scroll">
+              <span class="year-filter__year year-filter__year--all js-year-filter-select is-active">All</span>
+              <ul class="year-filter__list">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper clearfix list">
+      <div class="presentations__category" data-year="2018">
+        <h2 class="presentations__year transparent js-animate-fadeInOnScroll">2018</h2>
+        <div class="divider divider--members_former transparent js-animate-fadeInOnScroll"><span></span></div>
+
+        <ul class="presentations__list flex">
+          {% for post in site.posts %}{% if post.classification == 'presentations' %}{% if post.year == 2018 %}
+          <li class="presentation flex transparent js-animate-fadeInOnScroll">
+
+            <div class="presentation__author-ico">
+              <img width="255" height="255" src="{{site.url}}/assets/img/{{post.content_img}}" class="attachment-members-photo size-members-photo wp-post-image" alt="" srcset="{{site.url}}/assets/img/{{post.content_img}} 255w, {{site.url}}/assets/img/{{post.content_img}} 150w, {{site.url}}/assets/img/{{post.content_img}} 125w, {{site.url}}/assets/img/{{post.content_img}} 339w"
+                sizes="(max-width: 255px) 100vw, 255px" /> </div>
+
+            <div class="presentation__content">
+              <a class="presentation__doc-link" href="{{post.link}}" target="_blank">
+              <svg class="presentation__doc" width="13px" height="16px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-doc"></use>
+              </svg>
+            </a>
+
+              <h3 class="presentation__title">{{post.title}}</h3>
+
+              <a class="presentation__author presentation__author--link" href="{{site.url}}/{{post.author_url}}">
+              {{post.author}} <span class="arrow-rotate">
+                <svg>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use>
+                </svg>
+              </span>
+            </a>
+            </div>
+          </li>
+          {% endif %}{% endif %}{% endfor %}
+
+
+
+        </ul>
+
+      </div>
+      <div class="presentations__category" data-year="2017">
+        <h2 class="presentations__year transparent js-animate-fadeInOnScroll">2017</h2>
+        <div class="divider divider--members_former transparent js-animate-fadeInOnScroll"><span></span></div>
+
+        <ul class="presentations__list flex">
+          {% for post in site.posts %}{% if post.classification == 'presentations' %}{% if post.year == 2017 %}
+          <li class="presentation flex transparent js-animate-fadeInOnScroll">
+
+            <div class="presentation__author-ico">
+              <img width="255" height="255" src="{{site.url}}/assets/img/{{post.content_img}}" class="attachment-members-photo size-members-photo wp-post-image" alt="" srcset="{{site.url}}/assets/img/{{post.content_img}} 255w, {{site.url}}/assets/img/{{post.content_img}} 150w, {{site.url}}/assets/img/{{post.content_img}} 125w, {{site.url}}/assets/img/{{post.content_img}} 339w"
+                sizes="(max-width: 255px) 100vw, 255px" /> </div>
+
+            <div class="presentation__content">
+              <a class="presentation__doc-link" href="{{post.link}}" target="_blank">
+                        <svg class="presentation__doc" width="13px" height="16px">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-doc"></use>
+                        </svg>
+                      </a>
+
+              <h3 class="presentation__title">{{post.title}}</h3>
+
+              <a class="presentation__author presentation__author--link" href="{{site.url}}/{{post.author_url}}">
+                        {{post.author}} <span class="arrow-rotate">
+                          <svg>
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use>
+                          </svg>
+                        </span>
+                      </a>
+            </div>
+          </li>
+          {% endif %}{% endif %}{% endfor %}
+
+
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>

@@ -1,0 +1,186 @@
+
+<!doctype html>
+<!--[if IE 9]><html class="no-js ie9" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+  {% include head.html %}
+</head>
+<link rel='stylesheet' id='sccss_style-css' href='{{ site.url }}/assets/css/styles_feeling_responsive.css' type='text/css' media='all' />
+
+<body class="home page-template-default page page-id-19">
+
+  {% include navigation.html %}
+  <main class="main">
+    <div id="masthead" style="background: url('{{site.url}}/assets/img/banner.jpg'); background-size: 100% 100%">
+      <div class="row" >
+        <div class="small-12 columns" > <a id="logo" href="index.html" title="袁增伟教授课题组"> <img src="{{site.url}}/assets/img/yzwktz.png" alt="袁增伟教授课题组"> </a></div>
+      </div>
+    </div>
+
+
+    <div id="header-home">
+      <div class="row">
+        <div class="small-12 columns"></div>
+      </div>
+    </div>
+    <div class="row t60">
+      <div class="medium-4 columns frontpage-widget" style="flex: 0 0 33%;"> <a href="blog/index.html">
+        <div class="img" style="height: 0; padding-bottom: 50%; width: 100%; background: url(/assets/img/slide-bg-research.jpg); background-size: 100% 100%;">
+          <!-- <img src="{{site.url}}/assets/img/slide-bg-research.jpg" alt="" /> -->
+        </div>
+      </a>
+        <h2 class="font-size-h3 t10">研究内容</h2>
+        <p>主要从事环境规划与管理研究，致力于人类活动资源和环境效应评估，重点开展多尺度营养物质和重金属循环过程模拟，阐释其时空格局演变规律和驱动机制，并定量评估其资源和环境效应，为系统调控人类活动和推动区域可持续发展提供决策依据。
+          <p><a class="btn tiny radius" href="{{site.url}}/research/index.html">更多 ›</a></div>
+
+      <div class="medium-4 columns frontpage-widget">
+        <a href="#">
+            <div class="img" style="height: 0; padding-bottom: 50%; width: 100%; background: url('/assets/img/xnfzsys-desktop.jpg'); background-size: 100% 100%;">
+              <!-- <img src="{{site.url}}/assets/img/photorederx_bg-desktop.jpg"  alt=""/> -->
+              </div>
+            </a>
+        <h2 class="font-size-h3 t10">虚拟仿真实验室</h2>
+        <p>环境虚拟仿真实验室室一个基于环境大数据的虚拟仿真平台，平台利用Arcgis、系统分析、机器学习和云技术等进行数据分析和展示，主要包括“社会经济环境国家级虚拟仿真实验教学中心”和“污染控制与资源化研究国家重点实验室”。
+          <p><a class="btn tiny radius" href="https://ctfysh.shinyapps.io/virtuallab/">访问 ›</a></div>
+      {% assign maxRelated = 1 %}{% assign maxRelatedCounter = 0 %}
+      {% for post in site.posts %} {% if post.classification == 'publications' %}
+
+      <div class="medium-4 columns frontpage-widget">
+        <a href="{{ post.url }}">
+              		<div class="img" style="height: 0; padding-bottom: 50%; width: 100%; background: url('{{ post.content_img }}'); background-size: 100% 100%;">
+                    <!-- <img src="" alt="" /> -->
+                  </div>
+              		</a>
+        <h2 class="font-size-h3 t10">最新成果</h2>
+        <a href="{{ post.link }}"><p style="margin-bottom: 0; font-size: 1.08rem;" > {{ post.title }}</p></a>
+        <p style="font-size: 0.8rem; margin-bottom: 0;">{{ post.author }}</p>
+        <p style="font-family: serif; ">{{ post.journal }}</p>
+        <p><a class="btn tiny radius" href="{{ post.url }}">详细 ›</a></p>
+      </div>
+    </div>
+    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+      {% if maxRelatedCounter >= maxRelated %}
+        {% break %}
+      {% endif %}
+    {% endif %}{% endfor %}
+    <!--
+      <div class="row t60 b60">
+        <div class="small-12 text-center columns"> <a class="btn large radius alert" href="https://tinyletter.com/feeling-responsive" target="_blank">Inform me about new updates and features ›</a></div>
+      </div>
+  -->
+    <div class="row t30 b20 homepage">
+      <div class="small-12 columns" style=" z-index:-1; ">
+        <ul id="slides"> {% for post in site.posts limit:15 %} {% if post.classification == 'news' and post.img %}
+        <li class="slide">
+          <div style="background: url('{{post.img}}'); width:100%; height:30rem;-moz-background-size: 100% 30rem;
+  -webkit-background-size: 100% 30rem;
+  -o-background-size: 100% 30rem;
+  background-size: 100% 30rem;" href="{{ post.url }}"></div>
+          <p class="text-right caption"> <a href="{{ post.url }}">{{ post.title }}</a></p>
+        </li>
+        {% endif %}{% endfor %}
+        </ul>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="medium-6 columns" style="padding-right: 40px; flex: 0 0 49%;">
+        <p class="subheadline"><h2 class="font-size-h3 t10">学术报告</h2></p>
+        {% assign maxRelated = 1 %}{% assign maxRelatedCounter = 0 %}
+      {% for post in site.posts %} {% if post.classification == 'presentations' %}
+
+          <h2 style="margin-top:10px;"><a href="{{post.url}}">{{post.title}}</a></h2>
+          <p> {{post.content}}</p>
+          <a href="{{ post.link }}" title="pre"><strong>更多&nbsp;›</strong></a>
+        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+      {% if maxRelatedCounter >= maxRelated %}
+        {% break %}
+      {% endif %}
+    {% endif %}{% endfor %}
+          
+        </div>
+      <div class="medium-6 columns">
+        <h2 class="font-size-h3 t10" style="padding-bottom: 20px;">最新发布</h2>
+          <ul class="side-nav">
+            {% for post in site.posts limit:15 %} {% if post.classification == 'news'  %}
+            <li><a href="{{post.url}}"><strong>{{post.date | date: '%Y-%m-%d'}} ››</strong>{{post.title}}</a>
+            {% endif %}{% endfor %}
+                  <li class="text-right"><a href="news/index.html"><strong>更多 ›</strong></a></ul>
+      </div>
+    </div>
+
+    {{ content }} {% include indexfooter.html %}
+
+    <style type="text/css">
+      /*
+essential styles:
+these make the slideshow work
+*/
+
+      #slides {
+        position: relative;
+        height: 35rem;
+
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+      }
+
+      .slide {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+        vertical-align：middle;
+
+
+
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+      }
+
+      .showing {
+        opacity: 1;
+        z-index: 2;
+      }
+
+
+
+      /*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+      .slide {
+        font-size: 40px;
+        padding: 0px;
+        box-sizing: border-box;
+        background: rgba(255, 255, 255, 0);
+        color: #fff;
+      }
+    </style>
+    <script type="text/javascript">
+      var slides = document.querySelectorAll('#slides .slide');
+      var currentSlide = 0;
+      var slideInterval = setInterval(nextSlide, 2000);
+
+      function nextSlide() {
+        slides[currentSlide].className = 'slide';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'slide showing';
+      }
+    </script>
+  </main>
+  {% include scripts.html %}
+
+</body>
+
+</html>

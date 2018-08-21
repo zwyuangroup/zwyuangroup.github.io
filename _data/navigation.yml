@@ -1,0 +1,25 @@
+# Site navigation links
+
+- title: About
+  icon: heart
+  url: /about/
+
+- title: Articles
+  icon: book
+  url: /articles/
+
+- title: Blog
+  icon: pencil
+  url: /blog/
+
+- title: Collection
+  icon: list
+  url: /collection/
+
+- title: Tag
+  icon: tag
+  url: /tags/
+
+- title: Search
+  icon: search
+  url: /search/

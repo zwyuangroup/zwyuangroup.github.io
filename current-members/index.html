@@ -1,0 +1,230 @@
+---
+title: 团队成员
+layout: page
+description:
+---
+
+<main class="main main--interior">
+
+<section class="horizontal-slider">
+
+  <div class="js-horizontal-slider horizontal-slider__container">
+
+    <div class="horizontal-slider__wrapper">
+
+
+
+          <div class="horizontal-slider__slide">
+
+                          <img src="{{ site.url }}/assets/img/2016.jpg"  alt="">
+
+          </div>
+
+
+
+    </div>
+    <div class="horizontal-slider__pagination"></div>
+
+  </div>
+
+</section>
+<section >
+
+  <div class="secondary-navbar__container js-fixed-navbar">
+
+    <ul class="secondary-navbar__list">
+      <li class="secondary-navbar__item
+        secondary-navbar__item--active">
+        <a href="index.html">
+          团队成员        </a>
+      </li>
+      <li class="secondary-navbar__item
+        ">
+        <a href="../former-members/index.html">
+          人才培养        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</section>
+
+<section class="members">
+
+  <div class="wrapper">
+
+
+    <div class="members__category">
+
+      <div class="category__heading transparent js-animate-fadeInOnScroll">
+        <h2>教师</h2>
+        <div class="divider divider--members"><span></span></div>
+      </div>
+
+
+        <ul class="members__category-container">
+{% for post in site.posts %}{% if post.classification == 'team' %}{% if post.identify == 'teacher' %}
+                      <li class="members__item transparent js-animate-fadeInOnScroll">
+              <div class="members__item-wrap">
+
+                  <div class="members__item-icon">
+                    <img width="255" height="255" src="{{site.url}}{{post.img}}" class="attachment-members-photo size-members-photo wp-post-image" alt="" srcset="{{site.url}}{{post.img}} 255w, {{site.url}}{{post.img}} 150w, {{site.url}}{{post.img}} 125w, {{site.url}}{{post.img}} 720w, {{site.url}}{{post.img}} 339w" sizes="(max-width: 255px) 100vw, 255px" />                  </div>
+
+                  <img src="{{site.url}}/assets/img/{{post.flag_img}}"
+                       alt=""
+                       class="members__item-flag"/>
+
+                              </div>
+              <h3>{{post.title}}</h3>
+
+                              <a href="{{post.url| prepend: site.baseurl}}">view bio</a>
+
+            </li>
+{% endif %}{% endif %}{% endfor %}
+        </ul>
+
+
+    </div>
+
+
+    <div class="members__category">
+
+      <div class="category__heading transparent js-animate-fadeInOnScroll">
+        <h2>博士生</h2>
+        <div class="divider divider--members"><span></span></div>
+      </div>
+
+
+      <ul class="members__category-container">
+{% for post in site.posts %}{% if post.classification == 'team' %}{% if post.identify == 'doctor' %}
+                    <li class="members__item transparent js-animate-fadeInOnScroll">
+            <div class="members__item-wrap">
+
+                <div class="members__item-icon">
+                  <img width="255" height="255" src="{{site.url}}{{post.img}}" class="attachment-members-photo size-members-photo wp-post-image" alt="" srcset="{{site.url}}{{post.img}} 255w, {{site.url}}{{post.img}} 150w, {{site.url}}{{post.img}} 125w, {{site.url}}{{post.img}} 720w, {{site.url}}{{post.img}} 339w" sizes="(max-width: 255px) 100vw, 255px" />                  </div>
+
+                <img src="{{site.url}}/assets/img/{{post.flag_img}}"
+                     alt=""
+                     class="members__item-flag"/>
+
+                            </div>
+            <h3>{{post.title}}</h3>
+
+                            <a href="{{post.url| prepend: site.baseurl}}">view bio</a>
+
+          </li>
+{% endif %}{% endif %}{% endfor %}
+      </ul>
+
+
+    </div>
+
+
+    <div class="members__category">
+
+      <div class="category__heading transparent js-animate-fadeInOnScroll">
+        <h2>硕士生</h2>
+        <div class="divider divider--members"><span></span></div>
+      </div>
+
+
+      <ul class="members__category-container">
+{% for post in site.posts %}{% if post.classification == 'team' %}{% if post.identify == 'master' %}
+                    <li class="members__item transparent js-animate-fadeInOnScroll">
+            <div class="members__item-wrap">
+
+                <div class="members__item-icon">
+                  <img width="255" height="255" src="{{site.url}}{{post.img}}" class="attachment-members-photo size-members-photo wp-post-image" alt="" srcset="{{site.url}}{{post.img}} 255w, {{site.url}}{{post.img}} 150w, {{site.url}}{{post.img}} 125w, {{site.url}}{{post.img}} 720w, {{site.url}}{{post.img}} 339w" sizes="(max-width: 255px) 100vw, 255px" />                  </div>
+
+                <img src="{{site.url}}/assets/img/{{post.flag_img}}"
+                     alt=""
+                     class="members__item-flag"/>
+
+                            </div>
+            <h3>{{post.title}}</h3>
+
+                            <a href="{{post.url| prepend: site.baseurl}}">view bio</a>
+
+          </li>
+{% endif %}{% endif %}{% endfor %}
+      </ul>
+
+
+    </div>
+
+
+    <div class="members__category">
+
+      <div class="category__heading transparent js-animate-fadeInOnScroll">
+        <h2>本科生</h2>
+        <div class="divider divider--members"><span></span></div>
+      </div>
+
+
+      <ul class="members__category-container">
+{% for post in site.posts %}{% if post.classification == 'team' %}{% if post.identify == 'undergraduate' %}
+                    <li class="members__item transparent js-animate-fadeInOnScroll">
+            <div class="members__item-wrap">
+
+                <div class="members__item-icon">
+                  <img width="255" height="255" src="{{site.url}}{{post.img}}" class="attachment-members-photo size-members-photo wp-post-image" alt="" srcset="{{site.url}}{{post.img}} 255w, {{site.url}}{{post.img}} 150w, {{site.url}}{{post.img}} 125w, {{site.url}}{{post.img}} 720w, {{site.url}}{{post.img}} 339w" sizes="(max-width: 255px) 100vw, 255px" />                  </div>
+
+                <img src="{{site.url}}/assets/img/{{post.flag_img}}"
+                     alt=""
+                     class="members__item-flag"/>
+
+                            </div>
+            <h3>{{post.title}}</h3>
+
+                            <a href="{{post.url| prepend: site.baseurl}}">view bio</a>
+
+          </li>
+{% endif %}{% endif %}{% endfor %}
+      </ul>
+
+
+    </div>
+
+
+    <div class="members__category">
+
+      <div class="category__heading transparent js-animate-fadeInOnScroll">
+        <h2>访问学者</h2>
+        <div class="divider divider--members"><span></span></div>
+      </div>
+
+
+      <ul class="members__category-container">
+{% for post in site.posts %}{% if post.classification == 'team' %}{% if post.identify == 'visits' %}
+                    <li class="members__item transparent js-animate-fadeInOnScroll">
+            <div class="members__item-wrap">
+
+                <div class="members__item-icon">
+                  <img width="255" height="255" src="{{site.url}}{{post.img}}" class="attachment-members-photo size-members-photo wp-post-image" alt="" srcset="{{site.url}}{{post.img}} 255w, {{site.url}}{{post.img}} 150w, {{site.url}}{{post.img}} 125w, {{site.url}}{{post.img}} 720w, {{site.url}}{{post.img}} 339w" sizes="(max-width: 255px) 100vw, 255px" />                  </div>
+
+                <img src="{{site.url}}/assets/img/{{post.flag_img}}"
+                     alt=""
+                     class="members__item-flag"/>
+
+                            </div>
+            <h3>{{post.title}}</h3>
+
+                            <a href="{{post.url| prepend: site.baseurl}}">view bio</a>
+
+          </li>
+{% endif %}{% endif %}{% endfor %}
+      </ul>
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+</section>
+
+</main>

@@ -1,0 +1,116 @@
+<!doctype html>
+<!--[if IE 9]><html class="no-js ie9" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+
+<head>
+{% include head.html %}
+</head>
+
+<body class="page-template-default page flex flex-column">
+
+{% include navigation.html %}
+<main class="main main--interior members-single">
+<!--
+  <div class="js-members-single-slider members-single-slider__container">
+
+    <div class="members-single-slider__wrapper">
+
+
+
+          <div class="members-single-slider__slide">
+
+                          <img src="../../wp-content/uploads/sites/6/jian-4-391x300.png"
+                   alt=""
+                   class="fadeInInitImage transparent">
+
+          </div>
+
+
+          <div class="members-single-slider__slide">
+
+                          <img src="../../wp-content/uploads/sites/6/jian-3-391x300.png"
+                   alt=""
+                   class="fadeInInitImage transparent">
+
+          </div>
+
+
+          <div class="members-single-slider__slide">
+
+                          <img src="../../wp-content/uploads/sites/6/jian-2-391x300.png"
+                   alt=""
+                   class="fadeInInitImage transparent">
+
+          </div>
+
+
+          <div class="members-single-slider__slide">
+
+                          <img src="../../wp-content/uploads/sites/6/jian-1-391x300.png"
+                   alt=""
+                   class="fadeInInitImage transparent">
+
+          </div>
+
+
+
+    </div>
+
+    <div class="members-single-slider__pagination"></div>
+
+  </div> -->
+  <section class="hero-parallax js-parallax"
+           style="background-image: url('{{ site.url }}/assets/img/{% if page.classification == 'publications'%}Publications_Page.jpg{% endif %}{% if page.classification == 'team'%}unity.jpg{% endif %}{% if page.classification == 'former_team' %}unity.jpg{% endif %}');">
+
+    <div class="hero-parallax__content">
+            <h1 class="hero-parallax__title hero-parallax__title--white">
+          {% if page.classification == 'publications'%}研究成果{% endif %}{% if page.classification == 'team' %}团队成员{% endif %}{% if page.classification == 'former_team' %}以前成员{% endif %}      </h1>
+                <div class="divider divider--white"><span></span></div>
+    </div>
+
+  </section>
+  <div class="wrapper">
+    <div class="members-single__content">
+
+      <div class="members-single__sidebar">
+
+        <div class="members-single__photo">
+
+                      <img src="{{site.url}}{% if page.author_img %}{{ page.author_img }}{% endif %}{% if page.img %}{{ page.img }}{% endif %}" alt="" />
+
+        </div>
+
+                  <div class="members-single__email" style="text-align: center; margin-top: 2.125rem;">
+            <a class="btn"
+                style="height: 2rem; line-height: 2rem;"
+                href="mailto:{{page.email}}"
+                title="">
+              <span>Email</span>
+            </a>
+          </div>
+              </div>
+
+      <div class="members-single__description">
+
+        <h2>{{ page.title }}</h2>
+        <h4><span class="degree">{{page.subtitle}}</span></h4>
+
+        <div class="divider divider--members"><span></span></div>
+
+       {{ content }}
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+{% include footer.html %}
+
+
+{% include scripts.html %}
+
+</body>
+</html>

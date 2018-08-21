@@ -1,0 +1,58 @@
+---
+title: 受邀讲座
+layout: page
+description:
+---
+
+
+<main class="main main--interior">
+
+<section class="heading-background">
+  <div class="heading-background__wrap">
+          <h2 class="heading-background__heading">受邀讲座</h2>
+          </div>
+</section>
+
+<section class="timeline">
+  <div class="wrapper">
+    <ul class="timeline__item-list">
+{% for post in site.posts %}{% if post.classification == 'presentations' and post.author == '袁增伟' %}
+              <li class="timeline__item transparent js-animate-fadeInOnScroll">
+          <time>{{post.year}}.{{post.month}}</time>
+          <div>
+            <span>{{post.title}}</span>
+          </div>
+        </li>
+{% endif %}{% endfor %}
+      <li class="timeline__connect js-timeline-connect"></li>
+
+    </ul>
+  </div>
+</section>
+
+<section class="page-pagination">
+  <div class="wrapper">
+
+    <a class="btn  btn--pagination btn--pagination-left"
+        href="../scientific-consultant/index.html"
+                title="Scientific  Consultant">
+      <span class="arrow-rotate"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
+      <span>学术兼职</span>
+    </a>
+
+    <a class="btn btn--pagination"
+        href="../index.html"
+        title="Back">
+      <span>返回</span>
+    </a>
+    <a class="btn  btn--pagination btn--pagination-right"
+        href="../career/index.html"
+                title="Career">
+      <span>学习工作经历</span>
+      <span class="arrow-rotate"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
+    </a>
+
+  </div>
+</section>
+
+</main>
