@@ -1,18 +1,22 @@
 ---
-label: 基于水资源节约的印染企业订单排序优化模型及应用
-hide_body: 
-is_partial: 
+label: 新闻
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
   type: textarea
   hidden: false
   default: ''
+  config:
+    required: true
 - name: layout
   label: Layout
   type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: pub
+  config:
+    required: true
 - name: date
   label: Date
   type: datetime
@@ -22,7 +26,7 @@ fields:
   label: Year
   type: text
   hidden: false
-  default: ''
+  default: '2018'
 - name: author
   label: Author
   type: textarea
@@ -33,28 +37,15 @@ fields:
   type: textarea
   hidden: false
   default: ''
-- name: classification
+- type: text
+  name: classification
   label: Classification
-  type: list
-  hidden: false
-  default: ''
-- name: content_img
-  label: Content img
+  hidden: true
+  config:
+    required: true
+  default: news
+- name: img
+  label: img
   type: file
-  hidden: false
-  default: ''
-- name: author_img
-  label: Author img
-  type: text
-  hidden: false
-  default: ''
-- name: journal
-  label: Journal
-  type: text
-  hidden: false
-  default: ''
-- name: excerpt
-  label: Excerpt
-  type: textarea
   hidden: false
   default: ''
