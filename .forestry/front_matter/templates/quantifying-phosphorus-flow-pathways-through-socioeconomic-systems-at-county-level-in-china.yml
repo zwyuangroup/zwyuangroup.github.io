@@ -1,0 +1,61 @@
+---
+label: Quantifying phosphorus flow pathways through socioeconomic systems at county
+  level in China
+hide_body: 
+is_partial: 
+fields:
+- name: title
+  label: Title
+  type: textarea
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: year
+  label: Year
+  type: text
+  hidden: false
+  default: ''
+- name: author
+  label: Author
+  type: textarea
+  hidden: false
+  default: ''
+- name: link
+  label: Link
+  type: textarea
+  hidden: false
+  default: ''
+- name: classification
+  label: Classification
+  type: list
+  hidden: false
+  default: ''
+- name: content_img
+  label: Content img
+  type: file
+  hidden: false
+  default: ''
+- name: author_img
+  label: Author img
+  type: text
+  hidden: false
+  default: ''
+- name: journal
+  label: Journal
+  type: text
+  hidden: false
+  default: ''
+- name: excerpt
+  label: Excerpt
+  type: textarea
+  hidden: false
+  default: ''
