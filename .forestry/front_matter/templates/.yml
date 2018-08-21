@@ -30,11 +30,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: subtitle
-  label: Subtitle
-  type: text
-  hidden: false
-  default: ''
 - name: flag_img
   label: Flag img
   type: text
@@ -51,5 +46,32 @@ fields:
     source:
       type: simple
     required: true
+    options:
+    - doctor
+    - master
+    - undergraduate
+    - teacher
+    - postdoctor
+    - visits
   label: identify
   name: identify
+  default: doctor
+- type: select
+  name: subtitle
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - 博士生
+    - 硕士生
+    - 本科生
+    - 教授
+    - 副教授
+    - 副研究员
+    - 研究员
+    - 助理研究员
+    - 博士后
+    - 交换生
+    - 访问学者
+  label: subtitle
