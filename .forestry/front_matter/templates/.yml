@@ -1,7 +1,7 @@
 ---
-label: 首届环境地理优秀青年学者论坛
-hide_body: 
-is_partial: 
+label: 学术报告
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
@@ -11,8 +11,10 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: pub
+  config:
+    required: true
 - name: date
   label: Date
   type: datetime
@@ -22,14 +24,18 @@ fields:
   label: Year
   type: text
   hidden: false
-  default: ''
+  default: '2018'
+  config:
+    required: true
 - name: link
   label: Link
   type: textarea
   hidden: false
   default: ''
-- name: classification
-  label: Classification
-  type: list
-  hidden: false
-  default: ''
+- type: text
+  name: classification
+  label: classification
+  config:
+    required: true
+  hidden: true
+  default: presentations
