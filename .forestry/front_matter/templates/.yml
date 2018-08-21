@@ -1,7 +1,7 @@
 ---
-label: 学术报告
-hide_body: false
-is_partial: false
+label: 廖宇星
+hide_body: 
+is_partial: 
 fields:
 - name: title
   label: Title
@@ -11,31 +11,35 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: true
-  default: pub
-  config:
-    required: true
+  hidden: false
+  default: ''
 - name: date
   label: Date
   type: datetime
   hidden: false
   default: ''
-- name: year
-  label: Year
-  type: text
-  hidden: false
-  default: '2018'
-  config:
-    required: true
-- name: link
-  label: Link
-  type: textarea
+- name: img
+  label: Img
+  type: file
   hidden: false
   default: ''
-- type: text
-  name: classification
-  label: classification
-  config:
-    required: true
-  hidden: true
-  default: presentations
+- name: classification
+  label: Classification
+  type: list
+  hidden: false
+  default: ''
+- name: identify
+  label: Identify
+  type: text
+  hidden: false
+  default: ''
+- name: subtitle
+  label: Subtitle
+  type: text
+  hidden: false
+  default: ''
+- name: flag_img
+  label: Flag img
+  type: text
+  hidden: false
+  default: ''
