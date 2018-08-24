@@ -5,7 +5,7 @@ year: 2018
 classification: news
 date: 2018-08-22 14:50:00 +0000
 author: shenghu
-img: ''
+img: "/uploads/z1.jpg"
 undefined: ''
 
 ---
