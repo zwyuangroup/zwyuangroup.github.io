@@ -1,5 +1,5 @@
 ---
-title: huiyi
+title: 国家重点研发计划《珠江三角洲城市群生态安全保障技术》课题中期检查会成功召开
 layout: pub
 year: 2018
 classification: news
