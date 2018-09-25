@@ -40,22 +40,18 @@ index:
 # ┃┃┃┃━╋━━┃┃━┫╭╮┃┃┃╰━┫┃┃┃
 # ╰╯╰━━┻━━┻━━┻╯╰┻╯╰━━┻╯╰╯
 research:
-  img:
+  bg_img: slide-bg-research.jpg
   lca:
     slide1: lca_slide1.png
     slide2: lca_slide2.png
   mfa:
-    pic1: 
-      name: MFA图表标识
+    - name: MFA图表标识
       url: mfa_pic1.jpg
-    pic2: 
-      name: 物质代谢分析框架
+    - name: 物质代谢分析框架
       url: mfa_pic2.jpg
-    pic3: 
-      name: MFA基本程序
+    - name: MFA基本程序
       url: mfa_pic3.jpg
-    pic4: 
-      name: Lawrence A.etc. Ecosystems (2001) 
+    - name: Lawrence A.etc. Ecosystems (2001) 
       url: mfa_pic4.jpg
   doc:
     - name: 生命周期评价——刘欣

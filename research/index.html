@@ -112,90 +112,32 @@ description:
         </div>
       </div>
               <div class="research-organocatalysis__list row">
+                     {% for item in site.research.mfa %}
                       <div class="research-organocatalysis__item transparent js-animate-fadeInOnScroll">
               <a class="research-organocatalysis__cta js-fancybox"
-                  href="{{ site.url }}/assets/img/research/{{site.research.mfa.pic1.url}}"
+                  href="{{ site.url }}/assets/img/research/{{item.url}}"
                   data-fancybox-group="organocatalysis"
-                  title="Enamine Catalysis">
+                  title="{{item.name}}">
                 <svg class="research-organocatalysis__item-zoom">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use>
                 </svg>
                 <figure class="research-organocatalysis__thumb">
-                  <img src="{{ site.url }}/assets/img/research/{{site.research.mfa.pic1.url}}"
+                  <img src="{{ site.url }}/assets/img/research/{{item.url}}"
                   alt="">
                 </figure>
                 <div class="research-organocatalysis__overlay">
-                  <span class="research-organocatalysis__overlay-text">{{site.research.mfa.pic1.name}}</span>
+                  <span class="research-organocatalysis__overlay-text">{{item.name}}</span>
                   <svg class="research-organocatalysis__overlay-zoom">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use>
                   </svg>
                 </div>
               </a>
-              <span class="research-organocatalysis__item-title">{{site.research.mfa.pic1.name}}</span>
+              <span class="research-organocatalysis__item-title">{{item.name}}</span>
             </div>
-                      <div class="research-organocatalysis__item transparent js-animate-fadeInOnScroll">
-              <a class="research-organocatalysis__cta js-fancybox"
-                  href="{{ site.url }}/assets/img/research/{{site.research.mfa.pic2.url}}"
-                  data-fancybox-group="organocatalysis"
-                  title="Iminium Catalysis">
-                <svg class="research-organocatalysis__item-zoom">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use>
-                </svg>
-                <figure class="research-organocatalysis__thumb">
-                  <img src="{{ site.url }}/assets/img/research/{{site.research.mfa.pic2.url}}"
-                  alt="">
-                </figure>
-                <div class="research-organocatalysis__overlay">
-                  <span class="research-organocatalysis__overlay-text">{{site.research.mfa.pic2.name}}</span>
-                  <svg class="research-organocatalysis__overlay-zoom">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use>
-                  </svg>
-                </div>
-              </a>
-              <span class="research-organocatalysis__item-title">{{site.research.mfa.pic2.name}}</span>
-            </div>
-                      <div class="research-organocatalysis__item transparent js-animate-fadeInOnScroll">
-              <a class="research-organocatalysis__cta js-fancybox"
-                  href="{{ site.url }}/assets/img/research/{{site.research.mfa.pic3.url}}"
-                  data-fancybox-group="organocatalysis"
-                  title="SOMO Catalysis">
-                <svg class="research-organocatalysis__item-zoom">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use>
-                </svg>
-                <figure class="research-organocatalysis__thumb">
-                  <img src="{{ site.url }}/assets/img/research/{{site.research.mfa.pic3.url}}"
-                  alt="">
-                </figure>
-                <div class="research-organocatalysis__overlay">
-                  <span class="research-organocatalysis__overlay-text">{{site.research.mfa.pic3.name}}</span>
-                  <svg class="research-organocatalysis__overlay-zoom">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use>
-                  </svg>
-                </div>
-              </a>
-              <span class="research-organocatalysis__item-title">{{site.research.mfa.pic3.name}}</span>
-            </div>
-                      <div class="research-organocatalysis__item transparent js-animate-fadeInOnScroll">
-              <a class="research-organocatalysis__cta js-fancybox"
-                  href="{{ site.url }}/assets/img/research/{{site.research.mfa.pic4.url}}"
-                  data-fancybox-group="organocatalysis"
-                  title="Synergistic Catalysis">
-                <svg class="research-organocatalysis__item-zoom">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use>
-                </svg>
-                <figure class="research-organocatalysis__thumb">
-                  <img src="{{ site.url }}/assets/img/research/{{site.research.mfa.pic4.url}}"
-                  alt="">
-                </figure>
-                <div class="research-organocatalysis__overlay">
-                  <span class="research-organocatalysis__overlay-text">{{site.research.mfa.pic4.name}}</span>
-                  <svg class="research-organocatalysis__overlay-zoom">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use>
-                  </svg>
-                </div>
-              </a>
-              <span class="research-organocatalysis__item-title">{{site.research.mfa.pic4.name}}</span>
-            </div>
+                      {% endfor %} 
+              
+                      
+                      
                   </div>
           </div>
   </section>
