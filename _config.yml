@@ -11,7 +11,7 @@ site_name: 袁增伟教授课题组
 title: 袁增伟教授课题组
 description: 课题组主要从事环境规划与管理研究，致力于人类活动的资源和环境效应评估，为系统调控人类活动和推动区域可持续发展提供决策依据。
 locale: en_CN
-url: https://www.njumce.com
+url: //www.njumce.com
 enforce_ssl: www.njumce.com
 
 baseurl: ""
