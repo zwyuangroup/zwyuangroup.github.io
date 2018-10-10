@@ -1,11 +1,11 @@
 ---
-title: huiyi
+title: 论文摘要征集 | 国际可持续发展研究会议将在南京大学召开
 layout: pub
 year: 2018
 classification: news
-date: 2018-10-10 00:00:00 +0000
+date: 2018-10-10 09:08:04 +0000
 author: ''
-img: ''
+img: "/uploads/12.jpg"
 undefined: ''
 
 ---
