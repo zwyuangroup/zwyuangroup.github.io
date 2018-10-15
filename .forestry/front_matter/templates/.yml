@@ -45,4 +45,4 @@ fields:
   default: ''
 - type: textarea
 pages:
-- _posts/2018-10-10-huiyi.md
+- _posts/huiyi.md
