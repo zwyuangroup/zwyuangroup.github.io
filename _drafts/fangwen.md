@@ -1,5 +1,5 @@
 ---
-title: fangwen英国地质研究所终身高级研究员王磊来课题组学术交流
+title: 英国地质研究所终身高级研究员王磊来课题组学术交流
 layout: pub
 year: 2018
 classification: news
