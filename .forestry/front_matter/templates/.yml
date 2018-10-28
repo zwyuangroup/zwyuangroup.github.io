@@ -45,7 +45,7 @@ fields:
   default: ''
 - type: textarea
 pages:
-- _posts/fangwen.md
+- _posts/2018-10-28-fangwen.md
 - _posts/2018-10-28-fangwen.md
 - _posts/2018-10-28-xinwen.md
 - _posts/2018-10-25-第二届环境地理优秀青年学者论坛成功召开-copy.md
