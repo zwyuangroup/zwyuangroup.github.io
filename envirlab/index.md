@@ -5,36 +5,52 @@ ini:
 
 intro:
   - picurl: pflow.png
+    modelurl: 
     picname: 磷流分析概念框架图
   - picurl: lca.png
+    modelurl: 
     picname: LCI单元过程分析框架
   - picurl: p0.png
+    modelurl: 
     picname: 磷循环系统分析框架
   - picurl: p1.png
+    modelurl: N1
     picname: 大气系统磷流计算框架
   - picurl: p2.png
+    modelurl: N2
     picname: 非耕地系统磷流计算框架
   - picurl: p3.png
+    modelurl: N3
     picname: 内陆水体系统磷流计算框架
   - picurl: p4.png
+    modelurl: N4
     picname: 海洋系统磷流计算框架
   - picurl: p5.png
+    modelurl: N5
     picname: 磷矿采选系统磷流计算框架
   - picurl: p6.png
+    modelurl: N6
     picname: 磷化工生产系统磷流计算框架
   - picurl: p7.png
+    modelurl: N7
     picname: 农业种植系统磷流计算框架
   - picurl: p8.png
+    modelurl: N8
     picname: 畜禽养殖系统磷流计算框架
   - picurl: p9.png
+    modelurl: N9
     picname: 水产养殖系统磷流计算框架
   - picurl: p10.png
+    modelurl: N10
     picname: 农产品加工系统磷流计算框架
   - picurl: p11.png
+    modelurl: N11
     picname: 居民消费系统磷流计算框架
   - picurl: p12.png
+    modelurl: N12
     picname: 废水处理系统磷流计算框架
   - picurl: p13.png
+    modelurl: N13
     picname: 固废处置系统磷流计算框架
 ---
 

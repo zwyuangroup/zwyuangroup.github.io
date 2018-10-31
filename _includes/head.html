@@ -17,17 +17,22 @@
 <meta name="twitter:description" content="{{ page.description | strip_html }}" />
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}" />
 <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"{{ site.url }}\/","name":"{{ site.site_name }}","potentialAction":{"@type":"SearchAction","target":"{{ site.url }}\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!--Fancybox-->
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<link  href="{{ site.url }}/assets/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+<script src="{{ site.url }}/assets/fancybox/jquery.fancybox.min.js"></script>
 <!-- / Yoast SEO plugin. -->
 
 <link rel='dns-prefetch' href='http://s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="{{site.site_name}} &raquo; Feed" href="{{ site.url }}/assets/feed/index.rss" />
 <link rel="alternate" type="application/rss+xml" title="{{site.site_name}} &raquo; Comments Feed" href="{{ site.url }}/assets/comments/feed/index.rss" />
-<link rel='stylesheet' id='contact-form-7-css'  href='{{ site.url }}/assets/wp-content/plugins/contact-form-7/includes/css/styles-ver=4.8.1.css' type='text/css' media='all' />
-<link rel='stylesheet' id='authorizer-public-css-css'  href='{{ site.url }}/assets/wp-content/plugins/authorizer/css/authorizer-public-ver=2.3.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='{{ site.url }}/assets/css/styles-ver=4.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='authorizer-public-css-css'  href='{{ site.url }}/assets/css/authorizer-public-ver=2.3.2.css' type='text/css' media='all' />
 
 <link rel='stylesheet' id='sccss_style-css'  href='{{ site.url }}/assets/css/macmillan-sccss.css' type='text/css' media='all' />
 
-<link rel='stylesheet' id='main-css'  href='{{ site.url }}/assets/wp-content/themes/macmillan/assets/build/css/main.css' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css'  href='{{ site.url }}/assets/css/main.css' type='text/css' media='all' />
 <link rel='https://api.w.org/' href='{{ site.url }}/assets/js/index.json' />
 <link rel='shortlink' href='index.html' />
 

@@ -35,11 +35,8 @@ var _hmt = _hmt || [];
                viewBox="0 0 128.5 51.8">
             <polygon fill="#464646" points="-0.1,39.1 -0.1,26.1 -0.1,13.2 128.3,13.2 128.3,26.1 128.3,39.1 "/>
           </svg>
-          
-          <a class="btn  transparent js-animate-fadeInOnScroll" style="margin: 0 2rem;"
-              href="../404.html"
-                            title="Operation">
-            <span>实验操作指南</span>
+          <a class="btn  transparent js-animate-fadeInOnScroll" style="margin: 0 2rem;" data-fancybox data-type="iframe" data-src="https://mozilla.github.io/pdf.js/web/viewer.html" href="javascript:;">
+              <span>实验手册</span>
           </a>
           <a class="btn  transparent js-animate-fadeInOnScroll" style="margin: 0 2rem;"
               href="{{site.url}}/envirlab-platform/login"
@@ -134,10 +131,17 @@ var _hmt = _hmt || [];
       <div class="research-organocatalysis__list row">
         {% for item in page.intro %}
                       <div class="research-organocatalysis__item transparent js-animate-fadeInOnScroll">
+                        {% if item.modelurl %}
               <a class="research-organocatalysis__cta js-fancybox"
                   href="{{ site.url }}/assets/img/platform/{{item.picurl}}"
-                  data-fancybox-group="organocatalysis"
-                  title="{{item.picname}}">
+                  data-fancybox="images-preview"
+                  data-caption="<p>{{item.picname}}</p> <a href='{{ site.url }}/assets/img/platform/{{ item.modelurl}}'>下载模型</a>">
+                  {% else %}
+              <a class="research-organocatalysis__cta js-fancybox"
+                  href="{{ site.url }}/assets/img/platform/{{item.picurl}}"
+                  data-fancybox="images-preview"
+                  data-caption="<p>{{item.picname}}</p>">
+                  {% endif %}
                 <svg class="research-organocatalysis__item-zoom">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use>
                 </svg>
@@ -152,6 +156,7 @@ var _hmt = _hmt || [];
                   </svg>
                 </div>
               </a>
+           
               <span class="research-organocatalysis__item-title">{{item.picname}}</span>
             </div>
                       {% endfor %}
@@ -204,11 +209,7 @@ var _hmt = _hmt || [];
         </figure>
         <h2 class="section-login__heading">实验手册</h2>
           </header>
-
-
-                <a class="btn  transparent js-animate-fadeInOnScroll"
-              href="../404.html"
-                            title="Login">
+          <a class="btn  transparent js-animate-fadeInOnScroll" style="margin: 0 2rem;" data-fancybox data-type="iframe" data-src="https://mozilla.github.io/pdf.js/web/viewer.html" href="javascript:;">
             <span>获取</span>
           </a>
 
