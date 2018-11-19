@@ -5,7 +5,7 @@ year: 2018
 classification: news
 date: 2018-11-19 07:28
 author: ''
-img: ''
+img: "/uploads/11-2.png"
 undefined: ''
 
 ---
