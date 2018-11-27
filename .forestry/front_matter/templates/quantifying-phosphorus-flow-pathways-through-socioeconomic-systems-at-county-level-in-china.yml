@@ -65,3 +65,5 @@ fields:
   hidden: true
   config:
     required: true
+pages:
+- _posts/nqi.md
