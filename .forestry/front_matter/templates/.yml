@@ -1,18 +1,19 @@
 ---
-label: 过去成员
+label: 新闻
 hide_body: false
 is_partial: false
 fields:
-- name: title
-  label: Title
-  type: textarea
-  hidden: false
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
   default: ''
 - name: layout
   label: Layout
   type: text
   hidden: true
-  default: post
+  default: pub
   config:
     required: true
 - name: date
@@ -20,57 +21,28 @@ fields:
   type: datetime
   hidden: false
   default: ''
-- name: img
-  label: Img
-  type: file
+- name: year
+  label: Year
+  type: text
+  hidden: false
+  default: '2018'
+- name: author
+  label: Author
+  type: textarea
   hidden: false
   default: ''
-- type: select
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - doctor
-    - master
-    - undergraduate
-    - teacher
-    - postdoctor
-    - visits
-  label: identify
-  name: identify
-  default: doctor
-- type: select
-  name: subtitle
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - 博士生
-    - 硕士生
-    - 本科生
-    - 教授
-    - 副教授
-    - 副研究员
-    - 研究员
-    - 助理研究员
-    - 博士后
-    - 交换生
-    - 访问学者
-  label: subtitle
-  default: 博士生
-- name: flag_img
-  label: Flag img
-  type: text
-  hidden: true
-  default: flag/China.svg
-  config:
-    required: true
 - type: text
   name: classification
   label: classification
-  default: former_team
   hidden: true
   config:
     required: true
+  default: news
+- name: img
+  label: img
+  type: file
+  hidden: false
+  default: ''
+- type: textarea
+pages:
+- _posts/课题组成员刘欣-诸慧参加中国水产学会2018年学术年会-copy.md
