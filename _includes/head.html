@@ -6,7 +6,7 @@
 
 <!-- This site is optimized with the Yoast SEO plugin v5.2 - https://yoast.com/wordpress/plugins/seo/ -->
 <meta name="description" content="{{ page.description | strip_html }}"/>
-<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+<link rel="canonical" href=" {{ site.url }}{{ page.url }}" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}" />
