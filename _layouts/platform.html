@@ -132,21 +132,20 @@ var _hmt = _hmt || [];
                       <div class="research-organocatalysis__item transparent js-animate-fadeInOnScroll">
                         {% if item.modelurl %}
               <a class="research-organocatalysis__cta js-fancybox"
-                  href="{{ site.url }}/assets/img/platform/{{item.picurl}}"
-                  data-fancybox="images-preview"
+                  href="https://raw.githubusercontent.com/zwyuangroup/zwyuangroup.github.io/master/assets/img/platform/{{item.picurl}}"
+                  data-fancybox="images"
                   data-caption="<h3>{{item.picname}}</h3><p>{{item.description}} </p><a href='{{ site.url }}/assets/img/platform/{{ item.modelurl}}' ><h4>下载模型</h4></a>">
                   {% else %}
               <a class="research-organocatalysis__cta js-fancybox"
-                  href="{{ site.url }}/assets/img/platform/{{item.picurl}}"
-                  data-fancybox="images-preview"
+                  href="https://raw.githubusercontent.com/zwyuangroup/zwyuangroup.github.io/master/assets/img/platform/{{item.picurl}}"
+                  data-fancybox="images"
                   data-caption="<h3>{{item.picname}}</h3><p>{{item.description}}</p>">
                   {% endif %}
                 <svg class="research-organocatalysis__item-zoom">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use>
                 </svg>
                 <figure class="research-organocatalysis__thumb">
-                  <img src="{{ site.url }}/assets/img/platform/{{item.picurl}}"
-                  alt="">
+                  <img src="https://raw.githubusercontent.com/zwyuangroup/zwyuangroup.github.io/master/assets/img/platform/{{item.picurl}}" />
                 </figure>
                 <div class="research-organocatalysis__overlay" style="padding: 20% 0;">
                   <span class="research-organocatalysis__overlay-text">{{item.picname}}</span>
