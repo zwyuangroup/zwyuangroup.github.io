@@ -1,12 +1,11 @@
 ---
-label: 新闻
+label: 学术报告
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: title
-  config:
-    required: true
+- name: title
+  label: Title
+  type: textarea
+  hidden: false
   default: ''
 - name: layout
   label: Layout
@@ -25,25 +24,17 @@ fields:
   type: text
   hidden: false
   default: '2018'
-- name: author
-  label: Author
+  config:
+    required: true
+- name: link
+  label: Link
   type: textarea
   hidden: false
   default: ''
 - type: text
   name: classification
   label: classification
-  hidden: true
   config:
     required: true
-  default: news
-- name: img
-  label: img
-  type: file
-  hidden: false
-  default: ''
-- type: textarea
-pages:
-- _posts/2019-03-15-课题组成员前往浙江衢州华友钴新材料有限公司开展调研-1.md
-- _posts/课题组成员前往浙江衢州华友钴新材料有限公司开展调研.md
-- _posts/课题组成员刘欣-诸慧参加中国水产学会2018年学术年会-copy.md
+  hidden: true
+  default: presentations
