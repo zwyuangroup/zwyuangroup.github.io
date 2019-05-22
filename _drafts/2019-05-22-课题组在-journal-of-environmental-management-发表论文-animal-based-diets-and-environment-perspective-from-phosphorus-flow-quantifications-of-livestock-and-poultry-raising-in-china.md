@@ -25,11 +25,19 @@ Livestock and poultry; Phosphorus cycles; Environmental management; Food securit
 
 ![](/uploads/1-6.png "graphical abstract")
 
+graphical abstract
+
 ![](/uploads/2-3.jpg "The animal raising phosphorus flows analysis (APFA) model")
+
+The animal raising phosphorus flows analysis (APFA) model
 
 ![](/uploads/3.jpg "Distribution of P inputsfrom feedstuff and additives (a), P output as loss (b),   and P loss rate (c) in 2015")
 
+Distribution of P inputsfrom feedstuff and additives (a), P output as loss (b),   and P loss rate (c) in 2015
+
 ![](/uploads/4.jpg "PLR for each livestock andpoultry in the household raising and the intensive raising.   PLR (Protein) (a),and PLR (Calorie) (b)")
+
+PLR for each livestock andpoultry in the household raising and the intensive raising.   PLR (Protein) (a),and PLR (Calorie) (b)
 
 **第一及通讯作者**：袁增伟 南京大学 教授、博士生导师
 
