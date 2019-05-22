@@ -1,5 +1,5 @@
 ---
-label: 学术报告
+label: 过去成员
 hide_body: false
 fields:
 - name: title
@@ -11,7 +11,7 @@ fields:
   label: Layout
   type: text
   hidden: true
-  default: pub
+  default: post
   config:
     required: true
 - name: date
@@ -19,22 +19,57 @@ fields:
   type: datetime
   hidden: false
   default: ''
-- name: year
-  label: Year
-  type: text
-  hidden: false
-  default: '2018'
-  config:
-    required: true
-- name: link
-  label: Link
-  type: textarea
+- name: img
+  label: Img
+  type: file
   hidden: false
   default: ''
+- type: select
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - doctor
+    - master
+    - undergraduate
+    - teacher
+    - postdoctor
+    - visits
+  label: identify
+  name: identify
+  default: doctor
+- type: select
+  name: subtitle
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - 博士生
+    - 硕士生
+    - 本科生
+    - 教授
+    - 副教授
+    - 副研究员
+    - 研究员
+    - 助理研究员
+    - 博士后
+    - 交换生
+    - 访问学者
+  label: subtitle
+  default: 博士生
+- name: flag_img
+  label: Flag img
+  type: text
+  hidden: true
+  default: flag/China.svg
+  config:
+    required: true
 - type: text
   name: classification
   label: classification
+  default: former_team
+  hidden: true
   config:
     required: true
-  hidden: true
-  default: presentations
