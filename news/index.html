@@ -48,6 +48,64 @@ description:
     </div>
 
     <div class="wrapper list">
+      <div class="publication__category" data-year="2019">
+
+        <div class="publication__heading transparent js-animate-fadeInOnScroll">
+
+          <h2>2019</h2>
+
+          <div class="divider divider--members_former"><span></span></div>
+
+        </div>
+
+        <ul class="publication__category-container">
+
+          {% for post in site.posts %}{% if post.classification == 'news' %}{% if post.year == 2019 %}
+            <li class="publication transparent js-animate-fadeInOnScroll">
+
+              <header class="publication__header-box clearfix">
+                <div class="publication__header">
+                  <a href="{{ post.url| prepend: site.baseurl }}" target="_blank">
+                    <div class="publication__doc-container">
+                      <svg class="publication__doc" width="19px" height="25px">
+                        <use xlink:href="#icon-doc"></use>
+                      </svg>
+                    </div>
+                    <h3 class="publication__title">
+                      {{ post.title }}                  </h3>
+                  </a>
+                </div>
+                                      <div class="publication__linked-box">
+                      <a class="publication__link" href="{{post.link}}">More</a>
+                    </div>
+                                </header>
+
+
+              <div class="publication__content-box">
+                <div class="publication__cover-wrap" style=" width: 100% ">
+                  <div class="publication__cover">
+                    <div class="publication__icon">
+                                          </div>
+                    <div class="publication__content">
+                      <p>{{post.excerpt}}</p>
+                      <span class="publication__authors">
+                        {{ post.author }}                      </span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+
+
+
+        </ul>
+
+        </div>
       <div class="publication__category" data-year="2018">
 
         <div class="publication__heading transparent js-animate-fadeInOnScroll">
